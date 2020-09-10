@@ -15,16 +15,26 @@
 
 @implementation LLViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSString *)logoName {
+    return @"logo";
+}
+
+- (NSString *)website {
+    return @"https://www.baidu.com";
+}
+
+- (NSString *)serviceHotline {
+    return @"400-921-3900";
 }
 
 @end

@@ -101,6 +101,9 @@
 - (UIImageView *)logoView {
     if (_logoView == nil) {
         self.logoView = [[UIImageView alloc] init];
+        _logoView.layer.cornerRadius = 15.0;
+        _logoView.layer.borderWidth = 0.5f;
+        _logoView.layer.borderColor = [UIColor.grayColor colorWithAlphaComponent:0.3].CGColor;
     }
     return _logoView;
 }
