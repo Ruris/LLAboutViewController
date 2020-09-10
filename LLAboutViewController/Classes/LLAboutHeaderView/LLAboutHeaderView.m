@@ -63,10 +63,6 @@
         make.centerX.mas_equalTo(0.0f);
         make.top.equalTo(self.logoView.mas_bottom).offset(15.0f);
     }];
-    
-#if DEBUG
-//    _logoView.backgroundColor = [UIColor orangeColor];
-#endif
 }
 
 - (void)layoutSubviews {
