@@ -51,10 +51,12 @@
     [self addSubview:self.logoView];
     [self addSubview:self.nameLabel];
     
+    CGFloat scaleX = 414.0f / UIScreen.mainScreen.bounds.size.width;
+    
     [_logoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(0.0f);
         make.centerY.mas_equalTo(-15.0f);
-        make.size.mas_equalTo(CGSizeMake(80, 80));
+        make.size.mas_equalTo(CGSizeMake(80 * scaleX, 80 * scaleX));
     }];
     
     [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -100,8 +102,9 @@
 
 - (UIImageView *)logoView {
     if (_logoView == nil) {
+        CGFloat scaleX = 414.0f / UIScreen.mainScreen.bounds.size.width;
         self.logoView = [[UIImageView alloc] init];
-        _logoView.layer.cornerRadius = 15.0;
+        _logoView.layer.cornerRadius = 15.0 * scaleX;
         _logoView.layer.borderWidth = 0.5f;
         _logoView.layer.borderColor = [UIColor.grayColor colorWithAlphaComponent:0.3].CGColor;
     }
