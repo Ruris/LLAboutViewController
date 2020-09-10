@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LLAboutViewController_Example' do
+  pod 'LLAboutViewController', :path => '../'
+
+  target 'LLAboutViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
