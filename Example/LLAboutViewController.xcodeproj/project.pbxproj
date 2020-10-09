@@ -61,10 +61,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8C80491EC1DD1157B2CCA5E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8C80491EC1DD1157B2CCA5E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8EED8B5F590C4803B757C1B3 /* Pods-LLAboutViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAboutViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-LLAboutViewController_Example/Pods-LLAboutViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CF6E8BFAAA9A8D92059631B3 /* LLAboutViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LLAboutViewController.podspec; path = ../LLAboutViewController.podspec; sourceTree = "<group>"; };
-		DC37C0D00E8090B53F2DA42F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CF6E8BFAAA9A8D92059631B3 /* LLAboutViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLAboutViewController.podspec; path = ../LLAboutViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC37C0D00E8090B53F2DA42F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E19E623E07B5E6042DB8A3D4 /* Pods-LLAboutViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAboutViewController_Tests.release.xcconfig"; path = "Target Support Files/Pods-LLAboutViewController_Tests/Pods-LLAboutViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB82DABE1C067E0EAB6A95F2 /* Pods-LLAboutViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAboutViewController_Example.debug.xcconfig"; path = "Target Support Files/Pods-LLAboutViewController_Example/Pods-LLAboutViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				01B92723767B89211F63BEA3 /* Pods-LLAboutViewController_Tests.debug.xcconfig */,
 				E19E623E07B5E6042DB8A3D4 /* Pods-LLAboutViewController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
