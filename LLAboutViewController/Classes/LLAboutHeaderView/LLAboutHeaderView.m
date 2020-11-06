@@ -75,7 +75,7 @@
 - (void)setAppName:(NSString *)appName {
     if (_appName != appName) {
         _appName = appName;
-        self.nameLabel.text = _appName;
+        self.nameLabel.text = [NSString stringWithFormat:@"%@(%@)", _appName, NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"]];
     }
 }
 
