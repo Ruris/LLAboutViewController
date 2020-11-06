@@ -75,7 +75,7 @@ static NSString *const kAboutInfoKeyDesc = @"desc";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 44.0f;
+    return 50.0f * (UIScreen.mainScreen.bounds.size.width / 414.0);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
