@@ -10,13 +10,12 @@
 #import "LLAboutHeaderView.h"
 #import "LLAboutListViewCell.h"
 
-static NSString *const kAboutInfoKeyName = @"name";
-static NSString *const kAboutInfoKeyDesc = @"desc";
+NSString *const kAboutInfoKeyName = @"name";
+NSString *const kAboutInfoKeyDesc = @"desc";
 
 @interface LLAboutViewController ()
 
 @property (nonatomic, strong) LLAboutHeaderView *headView;
-@property (nonatomic, strong) NSArray<NSDictionary *> *infoList;
 
 @end
 
@@ -79,11 +78,11 @@ static NSString *const kAboutInfoKeyDesc = @"desc";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.01f;
+    return CGFLOAT_MIN;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0.01f;
+    return CGFLOAT_MIN;
 }
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -113,7 +112,7 @@ static NSString *const kAboutInfoKeyDesc = @"desc";
         CGFloat width = CGRectGetWidth(UIScreen.mainScreen.bounds);
         self.headView = [[LLAboutHeaderView alloc] initWithFrame:CGRectMake(0, 0, width, width * 0.5f)];
         _headView.logoName = self.logoName;
-        _headView.appName  = [NSBundle mainBundle].infoDictionary[@"CFBundleName"];
+        _headView.appName  = [NSBundle mainBundle].infoDictionary[@"CFBundleDisplayName"];
     }
     return _headView;
 }

@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString *const kAboutInfoKeyName;
+extern NSString *const kAboutInfoKeyDesc;
+
 @interface LLAboutViewController : QMUICommonTableViewController
 
 /// 图标名称
@@ -20,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 咨询热线
 @property (nonatomic, copy, readonly) NSString *serviceHotline;
+
+/// 列表信息
+@property (nonatomic, strong) NSArray<NSDictionary *> *infoList;
 
 @end
 
