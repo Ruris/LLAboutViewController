@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LLAboutViewController'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of LLAboutViewController.'
 
 # This description is used to generate tags and improve search results.
@@ -28,6 +28,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Ruris/LLAboutViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.static_framework = true
+  
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'LLAboutViewController/Classes/**/*'
@@ -41,4 +43,5 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'Masonry', '>= 1.1.0'
   s.dependency 'QMUIKit', '>= 4.1.3'
+  
 end

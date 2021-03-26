@@ -1,5 +1,5 @@
 PODS:
-  - LLAboutViewController (0.1.0):
+  - LLAboutViewController (0.1.3):
     - Masonry (>= 1.1.0)
     - QMUIKit (>= 4.1.3)
   - Masonry (1.1.0)
@@ -325,10 +325,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LLAboutViewController: 0c185849a894cb9057e00d74ecbc390405895e2a
+  LLAboutViewController: 975d0c8291a94a9da7a7fcef76f3205dbb64d39b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   QMUIKit: 1063a99f90aedd6e2dd65026ce0df46e6785e67b
 
 PODFILE CHECKSUM: 9e9154478fb3263b89a048b98cdd727d7301fd6e
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
