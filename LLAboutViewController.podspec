@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LLAboutViewController'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of LLAboutViewController.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.static_framework = true
   
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'LLAboutViewController/Classes/**/*'
   
@@ -42,6 +42,6 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'Masonry', '>= 1.1.0'
-  s.dependency 'QMUIKit', '>= 4.1.3'
+  s.dependency 'QMUIKit', '>= 4.6.3'
   
 end
